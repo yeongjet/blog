@@ -1,17 +1,3 @@
----
-layout:     post
-title:      Genetic Algorithm (JS achieve)
-date:       2015-12-5 12:31:19
-description: How to achieve Genetic Algorithm with javascript
-categories: jekyll
-thumbnail: cogs
-tags:
- - demo
- - action
- - carte
- - noire
----
-
 #####This is it
 ```javascript
 //移除数组元素
