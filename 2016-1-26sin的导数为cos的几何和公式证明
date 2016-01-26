@@ -1,0 +1,28 @@
+# sin的导数为cos的几何和公式证明
+###几何证明:
+![](http://7xqhly.com1.z0.glb.clouddn.com/sincos.png)
+AC切圆O于C
+AO交圆O于B
+CD、OF为水平线
+BF为垂直线
+令∠EOF = θ 求证sinθ的导数为cosθ
+证:
+设∠AOC的角度为x,
+由弦切角定理可知∠ACB = $\frac{1}{2}$x
+而且∠ECD=θ
+则∠BCD = 90°-θ-$\frac{1}{2}$x
+于是$$\lim_{x\to 0}sin(90°-θ-\frac{1}{2}x)=cosθ$$
+意思就是 当x无限接近于0时 sin(θ+x)-sinθ的差无限接近于cosθ
+
+###公式证明:
+$$\lim_{x\to 0}\frac{sin(θ+x)-sinθ}{x}$$
+$$=\lim_{x\to 0}\frac{sinθcosx+cosθsinx-sinθ}{x}$$
+$$=\lim_{x\to 0}\frac{cosθsinx}{x}$$
+因为$$\lim_{x\to 0}\frac{sinx}{x}=1$$
+所以结果为$$cosx$$
+
+为什么$$\lim_{x\to 0}\frac{sinx}{x}=1?$$
+当x无限接近于0,$\frac{sinx}{x}$ = $\frac{对边/半径}{弧长/半径}$ = 对边/弧长，无限接近于1
+
+
+
