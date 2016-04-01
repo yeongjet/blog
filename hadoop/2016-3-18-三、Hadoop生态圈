@@ -1,0 +1,23 @@
+#三、Hadoop生态圈
+狭义的Hadoop仅代表Common,HDFS和MapReduce模块。
+Common:最底层,为其他组件提供各种工具,如系统配置工具,远程过程调用RPC,序列化机制和日志操作,是其他模块的基础。
+HDFS(Hadoop Distributed File System):负责数据的存储,高容错性,高吞吐量的一个文件系统。
+MapReduce:负责数据的计算,是一种编程模型,利用函数式编程将对数据集处理过程分为Map和Reduce两个阶段。非常适合分布式计算,还可以用其他语言编程。
+HBase:分布式,面向列的开源数据库。擅长大规模数据的随机,实时读取。
+ZooKeeper:分布式服务框架,基于FastPaxos算法,解决一致性问题,提供配置维护,命名,同步,组等服务。
+Hive:数据仓库工具,基于MapReduce。将结构化的数据文件映射为一张表,提供简单的SQL查询,并将SQL语句转换为MapReduce作业。
+擅长大规模数据分析,学习成本低。
+Pig:类似Hive,基于MapReduce。但提供了更灵活的语言:Pig Latin,Pig可将Pig Latin脚本转为MapReduce作业。学习成本高。
+Impala:类似Hive,使用SQL语法,对中等数据查询快,性能领先Hive,并非基于MapReduce。
+Mahout:基于MapReduce,实现了经典的机器学习算法,高扩展性。
+Flume:高可靠,分布式日志采集聚合和传输的系统,自定义发送方,收集数据,也可以将数据写到自定义的接受方。
+Sqoop(SQL to Hadoop),结构化的数据(MySQL,Oracle)和HDFS,Hive之间的数据交换。基于MapReduce。
+Tez:可以将多个有依赖的作业转换为一个作业,使得Hadoop支持有向无环图的计算。
+Chukwa:开源的用于监控大型分布式系统的数据收集系统。这是构建在 hadoop 的 hdfs 和 map/reduce 框架之上
+
+
+
+
+
+
+
