@@ -1,0 +1,21 @@
+# 五、Hadoop架构
+主要由两部分组成:分布式文件系统HDFS,分布式计算框架MapReduce.
+##HDFS
+NameNode,DataNode,SecondaryNameNode既可指节点类型也可指守护进程
+NameNode:数量=1,存储元数据,文件与数据块的映射,提供文件系统的全景图。
+SecondaryNameNode:数量=1,备份NameNode的数据
+DataNode:数量>=1,存储块数据
+运行方式:主从模式(master/slave),一个NameNode,多个DataNode。
+
+##MapReduce
+JobTracker,TaskTracker既可指节点类型也可指守护进程
+JobTracker:数量=1,接受客户端的任务,分配任务到TaskTracker,监控TaskTracker,
+任务进度。
+TaskTracker:数量>=1,执行用户程序,周期性向JobTracker汇报状态。
+运行方式:主从模式(master/slave),一个JobTracker,多个TaskTracker。
+
+DataNode和TaskTracker需要部署在同一个节点,但为了稳定性和性能,NameNode和JobTracker分开部署
+
+
+
+
