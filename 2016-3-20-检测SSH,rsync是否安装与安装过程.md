@@ -5,13 +5,13 @@ ssh是一种安全协议,主要用于给远程登录会话数据进行加密,保
 检测SSH是否安装(root用户在所有节点执行)
 `rpm -qa | grep openssh`
 
-至少出现以下信息,则表示已经安装
+出现以下信息,则表示已经安装openssh
 
 ![](http://7xqhly.com1.z0.glb.clouddn.com/%E5%9B%BEgweg%E5%83%8F%202.png)
 
 `rpm -qa | grep rsync`
 
-至少出现以下信息,则表示已经安装
+出现以下信息,则表示已经安装rsync
 
 ![](http://7xqhly.com1.z0.glb.clouddn.com/%E5%9B%BEfwe%E5%83%8F%203.png)
 
