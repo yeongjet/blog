@@ -4,7 +4,7 @@
 
 2.新建连接
 
-`sudo pptpsetup --create PPTP --server 98.126.34.74 --username wilsonreis --password rty618816`
+`sudo pptpsetup --create PPTP --server 98.126.34.74 --username jack --password 123`
 
 3.开始连接
 
