@@ -1,9 +1,3 @@
-
-
-是不是已经安装好zlib：
-
-`whereis zlib`
-
 安装zlib 1.2.8:
 
 `wget http://zlib.net/zlib-1.2.8.tar.gz`
@@ -48,4 +42,6 @@
 
 `sudo rpm -ivh zlib-1.2.7-15.el7.x86_64.rpm`
 
+是否已经安装好zlib：
 
+`whereis zlib`
