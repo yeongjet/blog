@@ -42,6 +42,6 @@
 
 `sudo rpm -ivh zlib-1.2.7-15.el7.x86_64.rpm`
 
-是否已经安装好zlib：
+是否安装好zlib：
 
 `whereis zlib`
