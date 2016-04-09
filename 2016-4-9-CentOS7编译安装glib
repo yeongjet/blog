@@ -1,0 +1,15 @@
+编译环境:
+python2.7.11 (参考CentOS7编译安装Python2)
+libffi-3.2.1 (http://www.linuxfromscratch.org/blfs/view/svn/general/libffi.html)
+
+
+开始编译安装:
+`./configure`
+提示
+>configure: error: *** Working zlib library and headers not found ***
+需要先安装zlib,参考《CentOS7编译安装zlib》
+./configure --prefix=/usr/local/glib --with-pcre=system --with-zlib=/usr/local/zlib/lib`
+
+
+
+
