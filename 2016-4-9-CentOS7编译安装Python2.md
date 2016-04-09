@@ -10,31 +10,29 @@
 
 3.编译环境
 
-`./configure --prefix=/usr/local/python27`
+`sudo ./configure --prefix=/usr/local/python27`
 
 
 4.编译
 
-`make`
+`sudo make`
 
 5.安装
 
-`make install`
+`sudo make install`
 
 6.`sudo mv /usr/bin/python /usr/bin/python-2.7.5`
 
-但是我发现这步要在安装前进行,否则依旧是老版本
+7.`sudo ln -s /usr/local/python27/bin/python /usr/bin/python`
 
-7.`ln -s /usr/local/python27/bin/python /usr/bin/python`
-
-8.分别执行`python -V`和`python-2.7.5 -V`
-
-分别显示的是`Python 2.7.5`和`Python 2.7.11`
-
-9.`vi /usr/bin/yum`
+8.`sudo vi /usr/bin/yum`
 
 将第一行中的`#!/usr/bin/python`修改为`#!/usr/bin/python-2.7.5`
 
+9.`sudo ldconfig`
+
+10.执行`python -V`和`python-2.7.5 -V`
+分别显示的是`Python 2.7.5`和`Python 2.7.11`
 
 但编译过程中会有提示,我忽略了。
 >INFO: Can't locate Tcl/Tk libs and/or headers
