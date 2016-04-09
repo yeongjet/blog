@@ -1,4 +1,4 @@
-安装zlib 1.2.8:
+安装zlib
 
 `wget http://zlib.net/zlib-1.2.8.tar.gz`
 
@@ -38,10 +38,10 @@
 `rpm -ivh zlib-1.2.7-15.el7.x86_64.rpm --replacefiles`
 
 
-安装zlib-devel:
+安装zlib-devel
 
 `sudo rpm -ivh zlib-1.2.7-15.el7.x86_64.rpm`
 
-是否安装好zlib：
+是否安装好zlib
 
 `whereis zlib`
