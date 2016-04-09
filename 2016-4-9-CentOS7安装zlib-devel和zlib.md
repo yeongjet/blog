@@ -1,10 +1,12 @@
-###zlib 1.2.8的安装:
+
 
 是不是已经安装好zlib：
 
 `whereis zlib`
 
-'wget http://zlib.net/zlib-1.2.8.tar.gz'
+安装zlib 1.2.8:
+
+`wget http://zlib.net/zlib-1.2.8.tar.gz`
 
 `tar -zxvf zlib-1.2.8.tar.gz`
 
@@ -20,6 +22,7 @@
 
 新建zlib.conf
 `sudo vi /etc/ld.so.conf.d/zlib.conf`
+
 加入以下内容
 `/usr/local/zlib/lib`
 
@@ -37,7 +40,8 @@
 `rpm -ivh zlib-1.2.7-15.el7.x86_64.rpm --replacefiles`
 
 
-###zlib-devel的安装:
+安装zlib-devel:
+
 `sudo rpm -ivh zlib-1.2.7-15.el7.x86_64.rpm`
 
 
