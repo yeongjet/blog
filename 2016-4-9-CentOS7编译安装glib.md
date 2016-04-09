@@ -28,7 +28,7 @@ libffi-3.2.1
 
 `export LIBFFI_CFLAGS=-I/usr/local/glib/lib/libffi-3.0.11/include`
 
-`export LIBFFI_LIBS=-L/usr/local/glib/lib -lffi`
+`export LIBFFI_LIBS="-L/usr/local/glib/lib -lffi"` (别漏了双引号)
 
 再次执行,提示
 >No package 'libpcre' found
