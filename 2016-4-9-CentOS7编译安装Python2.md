@@ -36,7 +36,7 @@
 将第一行中的`#!/usr/bin/python`修改为`#!/usr/bin/python-2.7.5`
 
 
-过程中提示
+但编译过程中会有提示,我忽略了。
 >INFO: Can't locate Tcl/Tk libs and/or headers
 Python build finished, but the necessary bits to build these modules were not found:
 _bsddb             _curses            _curses_panel   
