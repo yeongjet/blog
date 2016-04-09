@@ -40,6 +40,7 @@ libffi-3.2.1
 没有安装的话先安装pcre再安装pcre-devel
 
 `rpm -ivh pcre-8.32-15.el7.x86_64.rpm`
+
 `rpm -ivh pcre-devel-8.32-15.el7.x86_64.rpm`
 
 还出现刚才的提示,设置PKG_CONFIG_PATH
