@@ -34,7 +34,7 @@
 10.执行`python -V`和`python-2.7.5 -V`
 分别显示的是`Python 2.7.5`和`Python 2.7.11`
 
-但编译过程中会有提示,我忽略了。
+编译过程中会有提示,但我忽略了。
 >INFO: Can't locate Tcl/Tk libs and/or headers
 Python build finished, but the necessary bits to build these modules were not found:
 _bsddb             _curses            _curses_panel   
