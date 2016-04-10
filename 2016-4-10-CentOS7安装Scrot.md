@@ -9,7 +9,8 @@ http://packages.psychotic.ninja/7/base/x86_64/RPMS/
 
 `sudo yum --enablerepo=psychotic install giblib-devel`
 
-此时会顺带安装imlib2
+会顺带安装imlib2
+
 
 来到scrot目录下
 
@@ -77,6 +78,6 @@ b选项在抓取窗口时一同将外边框抓取下来,s选项则让用户选�
 
 `vim screenshot`
 
-`scrot -e 'mv $f ~/images'`
+`scrot -cd 3 -t 60 -s ~/pictures`
 
 `sudo ln -s ~/screenshot /usr/bin/scs`
