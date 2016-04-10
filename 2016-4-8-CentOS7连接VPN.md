@@ -47,14 +47,14 @@
 
 查看路由设置
 
-`route -n`
+`sudo route -n`
 
-`route add -net 0.0.0.0 dev ppp0`
+`sudo route add -net 0.0.0.0 dev ppp0`
 
 ![](http://7xqhly.com1.z0.glb.clouddn.com/Screenshot%20from%202016-04-08%2006:03:42.png)
 
 关闭连接
-`killall pppd`
+`sudo killall pppd`
 
 
 
