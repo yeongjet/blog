@@ -73,11 +73,14 @@ e选项开启操作图像功能，$f代表原图的路径
 `scrot -bs window.png`
 
 b选项在抓取窗口时一同将外边框抓取下来,s选项则让用户选择所要抓取的是何窗口。
-　
+
+
 + 通过脚本截图
+
 
 `vim screenshot`
 
 `scrot -cd 3 -t 60 -bs ~/Pictures/s.png`
 
 `sudo ln -s ~/screenshot /usr/bin/scs`
+
