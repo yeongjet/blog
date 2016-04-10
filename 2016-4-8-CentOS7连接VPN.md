@@ -10,6 +10,33 @@
 
 `sudo pppd call PPTP updetach`
 
+如果出现
+
+>LCP terminated by peer (MPPE required but peer refused)
+
+修改
+
+`sudo vi /etc/ppp/peers/PPTP`
+
+在后面增加
+
+`require-mppe-128`
+
+连接成功会出现以下提示
+
+>Using interface ppp0
+
+>Connect: ppp0 <--> /dev/pts/2
+
+>CHAP authentication succeeded
+
+>MPPE 128-bit stateless compression enabled
+
+>local  IP address 192.168.120.14
+
+>remote IP address 192.168.120.1
+
+
 4.检查是否连接上
 
 `ifconfig`
@@ -29,17 +56,6 @@
 关闭连接
 `killall pppd`
 
-如果出现
-
-`LCP terminated by peer (MPPE required but peer refused)`
-
-修改
-
-`sudo vi /etc/ppp/peers/PPTP`
-
-在后面增加
-
-`require-mppe-128`
 
 
 
