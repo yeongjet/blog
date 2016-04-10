@@ -31,7 +31,7 @@ Scrot用法
 
 + 指定路径文件名
 
-`scrot ~/pictures/desktop.png`
+`scrot ~/Pictures/desktop.png`
 
 如果不指定,会根据当前的日期时间、宽高生成文件名。
 
@@ -78,6 +78,6 @@ b选项在抓取窗口时一同将外边框抓取下来,s选项则让用户选�
 
 `vim screenshot`
 
-`scrot -cd 3 -t 60 -s ~/pictures`
+`scrot -cd 3 -t 60 -bs ~/Pictures/s.png`
 
 `sudo ln -s ~/screenshot /usr/bin/scs`
