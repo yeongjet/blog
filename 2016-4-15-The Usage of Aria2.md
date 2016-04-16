@@ -1,3 +1,5 @@
+aria2c --enable-rpc --rpc-listen-all
+
 http://bbs.feng.com/read-htm-tid-9585996.html
 
 http://ziahamza.github.io/webui-aria2
