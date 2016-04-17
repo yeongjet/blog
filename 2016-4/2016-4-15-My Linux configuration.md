@@ -8,13 +8,8 @@ There are my configuration:
 
 `yum groupinstall -y "X Window System"`
 
-vim:
-`vi .vimrc`
-```sh
-#ts means tabstop
-set ts=4
-set expandtab
-```
+
+Note! don't Opera in root
 
 + WM: dwm+dmenu+compton
 
@@ -35,23 +30,45 @@ The font name is behind the filename.
 + VPN: pppd
 `sudo yum install ppp pptp pptp-setup`
 
-+ font: [yahei_mono]
++ Font: [yahei_mono]
 (https://de-3.offcloud.com/cloud/download/5713129db40677dd57001377/yahei_mono.ttf)
 
-+ pdf: FoxitReader
++ PDF: FoxitReader
 
-+ media: mplayer
++ Media: mplayer
 
-+ games: steam
++ Games: steam
 
-+ download: aria2+webui-aria2+ThunderLiXianAssistant+BaiduExporter
++ Download: aria2+webui-aria2+ThunderLiXianAssistant+BaiduExporter
 
-+ TeamManager: slack
++ Team Manager: slack
 
 + WifiManager: networkmanager
 You might see this error:
+
 > /usr/lib64/librsvg-2.so.2: undefined symbol:g_type_class_adjust_private_offset
-solve it: `sudo yum install -y selinux-policy-devel`
+
+solve: `sudo yum install -y selinux-policy-devel`
 
 + Audio driver
-`sudo yum install -y 
+
+`sudo yum install -y pulseaudio`
+
++ File Manager:vifm
+
+Develop Enviroment
+
+vim:
+`vi .vimrc`
+```sh
+#ts means tabstop
+set ts=4
+set expandtab
+```
+
+opencv:
+
+`cd opencv`
+
+`cmake CMakeLists.txt`
+
